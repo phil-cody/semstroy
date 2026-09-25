@@ -79,6 +79,7 @@
 
 .projects__item-img {
   aspect-ratio: 1.25;
+  width: 100%;
 
   @media (max-width: 768px) {
     aspect-ratio: 1.6;
