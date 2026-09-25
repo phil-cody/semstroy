@@ -81,6 +81,7 @@
   padding: 0;
   border: 0;
   width: var(--dimension-xlll);
+  background-color: transparent;
   cursor: pointer;
 
   @media (max-width: 768px) {
