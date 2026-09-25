@@ -15,6 +15,10 @@
     mask-size: contain;
     mask-repeat: repeat;
 
+    -webkit-mask-image: url(../../images/separator.svg);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: repeat;
+
     @media (max-width: 768px) {
       visibility: hidden;
     }

@@ -75,12 +75,13 @@
 .slider-controls {
   position: absolute;
   bottom: 50%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   transform: translateY(50%);
   pointer-events: none;
 
   @media (max-width: 768px) {
+    display: flex;
     left: var(--dimension-xl);
     width: calc(100% - var(--dimension-xl) * 2);
   }
