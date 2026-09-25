@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>СЕМСТРОЙ — комплексный ремонт и отделка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="site">
+      <header id="header" class="header">
+        <div class="container header__content">
+          <a class="header__logo logo" href="./index.html" aria-label="СЕМСТРОЙ, на главную">
+            <span>СЕМ</span><span>СТРОЙ</span>
+          </a>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <ul>
+              <li>
+                <a href="#services">Услуги</a>
+              </li>
+              <li>
+                <a href="#reviews">Отзывы</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__tel btn btn-red" href="tel:+71234567890" aria-label="Позвонить по номеру +7 123 456 7890">+7 123 456 7890</a>
+          <button id="open-burger" class="header__open-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <section id="burger-menu" class="burger">
+          <div class="container burger__content">
+            <div class="burger__header">
+              <a class="header__logo logo" href="./index.html" aria-label="СЕМСТРОЙ, на главную">
+                <span>СЕМ</span><span>СТРОЙ</span>
+              </a>
+              <button id="close-burger" class="burger__close-burger">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="burger__main">
+              <nav class="burger__nav" aria-label="Основная навигация">
+                <ul>
+                  <li>
+                    <a href="#services">Услуги</a>
+                  </li>
+                  <li>
+                    <a href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#footer">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="burger__tel btn btn-black" href="tel:+71234567890" aria-label="Позвонить по номеру +7 123 456 7890">+7 123 456 7890</a>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="container hero__content">
+          <div class="hero__text">
+            <h1 id="hero-title">Комплексный ремонт и отделка всех видов</h1>
+            <p>Квартиры, дома, коммерческая недвижимость – работаем с фиксированой ценой и&nbsp;гарантией!</p>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn-red" href="#cost-calculator">
+              <span>Рассчитать стоимость</span>
+            </a>
+            <a class="btn btn-transparent" href="#projects">
+              <span>Примеры работ</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="advantages" class="advantages" aria-labelledby="advantages-title">
+        <div class="container advantages__content">
+          <svg class="advantages__polygon" viewBox="0 0 1479 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1483.5 23V0H0L1483.5 23Z" fill="white"/>
+          </svg>
+          <h2 id="advantages-title">Почему выбирают нас</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3>Игори</h3>
+              <p>Команда настоящих Игорей</p>
+            </li>
+            <li class="advantages__item">
+              <h3>57 бутылок</h3>
+              <p>Выпивают каждый день</p>
+            </li>
+            <li class="advantages__item">
+              <h3>Николай</h3>
+              <p>Тоже присутствует в команде</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about__content">
+          <div class="about__text">
+            <h2 id="about-title">О компании</h2>
+            <p>Как то мы забухали. Васян на спор снес межкомнатную перегородку головой, после этого мы решили заняться спортом.</p>
+          </div>
+          <div class="about__workman">
+            <img src="./images/about-img.png" alt>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container projects__content">
+          <h2 id="projects-title">Реализованные <span>проекты</span>
+          </h2>
+          <ul class="projects__list slider slider-white">
+            <li class="projects__item">
+              <div class="projects__item-title">
+                <p>Калининград</p>
+              </div>
+              <a class="projects__item-img" data-fslightbox="projects-gallery" href="./images/projects-1.webp">
+                <img src="./images/projects-1.webp" alt="Пример выполненной работы в Калининграде">
+              </a>
+              <div class="projects__item-description">
+                <p>Домик для собаки</p>
+                <p>Площадь <span>0,5 м2</span></p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-title">
+                <p>Калининград</p>
+              </div>
+              <a class="projects__item-img" data-fslightbox="projects-gallery" href="./images/projects-2.webp">
+                <img src="./images/projects-2.webp" alt="Пример выполненной работы в Калининграде">
+              </a>
+              <div class="projects__item-description">
+                <p>Домик для собаки</p>
+                <p>Площадь <span>0,5 м2</span></p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-title">
+                <p>Калининград</p>
+              </div>
+              <a class="projects__item-img" data-fslightbox="projects-gallery" href="./images/projects-3.webp">
+                <img src="./images/projects-3.webp" alt="Пример выполненной работы в Калининграде">
+              </a>
+              <div class="projects__item-description">
+                <p>Домик для собаки</p>
+                <p>Площадь <span>0,5 м2</span></p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-title">
+                <p>Калининград</p>
+              </div>
+              <a class="projects__item-img" data-fslightbox="projects-gallery" href="./images/projects-4.webp">
+                <img src="./images/projects-4.webp" alt="Пример выполненной работы в Калининграде">
+              </a>
+              <div class="projects__item-description">
+                <p>Домик для собаки</p>
+                <p>Площадь <span>0,5 м2</span></p>
+              </div>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="slider__btn button__prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 12L1 6.5L6.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="slider__btn button__next" type="button" aria-label="Следующий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L1 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="cta-price" class="cta-price" aria-labelledby="price-title">
+        <div class="container cta-price__content">
+          <h2 id="price-title">
+            Сколько стоит <span>ремонт?</span>
+          </h2>
+          <a class="btn btn-yellow" href="#cost-calculator">Узнать цену</a>
+        </div>
+      </section>
+      <section id="principles" class="principles" aria-labelledby="principles-title">
+        <div class="container principles__content">
+          <h2 id="principles-title">Принципы работы</h2>
+          <ul class="principles__list slider slider-grey">
+            <li class="principles__item">
+              <h3>Не бей лежачего</h3>
+              <p>Зачем бить лежачего, если можно бить детей?</p>
+            </li>
+            <li class="principles__item">
+              <h3>Жи ши пиши через и</h3>
+              <p>Просто запомни это сынок</p>
+            </li>
+            <li class="principles__item">
+              <h3>Одна голова хорошо, а две это сиамсие близнецы</h3>
+              <p>Что тоже не самый плохой вариант</p>
+            </li>
+            <li class="principles__item">
+              <h3>Игорь лучше Николая</h3>
+              <p>Люди говорят на разных яизыка. Лично я разговариваю на языке фактов</p>
+            </li>
+            <li class="principles__item">
+              <h3>Бананы, кокосы - апельсиновый рай</h3>
+              <p>Стоит только захотеть, можно и звезды. Стоит только захотеть - с неба забрать.</p>
+            </li>
+            <li class="principles__item">
+              <h3>Гойда братья!</h3>
+              <p>Гойда!</p>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="slider__btn button__prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 12L1 6.5L6.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="slider__btn button__next" type="button" aria-label="Следующий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L1 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="calculator" class="calculator" aria-labelledby="calculator-title">
+        <div class="container calculator__content">
+          <h2 id="calculator-title">Рассчитайте стоимость онлайн</h2>
+          <form aria-label="Калькулятор стоимости ремонта">
+            <h3>Где хотите сделать ремонт?</h3>
+            <div class="calculator__fields">
+              <fieldset>
+                <input id="field-1" type="radio" name="calculator-field" value="home" checked>
+                <label for="field-1">Дома</label>
+              </fieldset>
+              <fieldset>
+                <input id="field-2" type="radio" name="calculator-field" value="entrance">
+                <label for="field-2">В падике</label>
+              </fieldset>
+              <fieldset>
+                <input id="field-3" type="radio" name="calculator-field" value="bathroom">
+                <label for="field-3">В ванной</label>
+              </fieldset>
+              <fieldset>
+                <input id="field-4" type="radio" name="calculator-field" value="none">
+                <label for="field-4">Не хочу ремонт</label>
+              </fieldset>
+            </div>
+            <button class="btn btn-red" type="submit">Далее</button>
+          </form>
+        </div>
+      </section>
+      <section id="services" class="services" aria-labelledby="services-title">
+        <div class="container services__content">
+          <h2 id="services-title">Что еще мы можем?</h2>
+          <ul class="services__list slider slider-no-scrollbar">
+            <li class="services__item">
+              <img src="./images/services-1.webp" alt>
+              <p>Ремонт частных домов</p>
+            </li>
+            <li class="services__item">
+              <img src="./images/services-2.webp" alt>
+              <p>Ремонт коммерческих помещений</p>
+            </li>
+            <li class="services__item">
+              <img src="./images/services-3.webp" alt>
+              <p>Дизайн проекты</p>
+            </li>
+            <li class="services__item">
+              <img src="./images/services-4.webp" alt>
+              <p>Приемка квартир</p>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="slider__btn button__prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 12L1 6.5L6.5 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="slider__btn button__next" type="button" aria-label="Следующий слайд">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L1 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="callback" class="callback" aria-labelledby="callback-title">
+        <div class="container callback__content">
+          <h2 id="callback-title">Остались вопросы?</h2>
+          <form class="callback__form" aria-label="Форма обратной связи">
+            <h3>Давайте обсудим ваш ремонт!</h3>
+            <div class="callback__fields">
+              <fieldset>
+                <label for="customer-name">ФИО</label>
+                <input placeholder="ФИО" id="customer-name" name="name" type="text" autocomplete="name" required aria-label="ФИО">
+              </fieldset>
+              <fieldset>
+                <label for="customer-phone">Телефон</label>
+                <input placeholder="Телефон" id="customer-phone" name="phone" type="tel" autocomplete="tel" required aria-label="Телефон">
+              </fieldset>
+            </div>
+            <button class="btn btn-yellow" type="submit">Отправить</button>
+          </form>
+          <div class="callback__workman">
+            <img src="./images/callback-img.png" alt>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="container footer__content">
+          <a class="footer__logo logo" href="./index.html" aria-label="СЕМСТРОЙ, на главную">
+            <span>СЕМ</span><span>СТРОЙ</span>
+          </a>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <ul>
+              <li>
+                <a href="#projects">Проекты</a>
+              </li>
+              <li>
+                <a href="#reviews">Отзывы</a>
+              </li>
+              <li>
+                <a href="#faq">FAQ</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer__contacts">
+            <a href="tel:+79211234567">+7 (921) 123-45-67</a>
+            <a href="mailto:Semstroy@mail.ru">Semstroy@mail.ru</a>
+            <p>Калининград, ул. Драгрейсинговая, 12</p>
+          </address>
+          <div class="footer__privacy">
+            <a href="#privacy">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./scripts/fslightbox.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/burger.js"></script>
+  </body>
+</html>

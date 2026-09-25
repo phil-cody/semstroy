@@ -1,0 +1,118 @@
+.slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--medium-grey);
+
+  &::-webkit-scrollbar {
+    width: var(--dimension-xxs);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--medium-grey);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: var(--dimension-xxxss);
+  }
+
+  @media (max-width: 768px) {
+    scrollbar-width: auto;
+
+    &::-webkit-scrollbar {
+      display: block;
+      height: var(--dimension-xxs);
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb {
+      border-radius: var(--dimension-xxxxl);
+    }
+  }
+}
+
+.slider-white {
+  scrollbar-color: var(--medium-grey);
+
+  &::-webkit-scrollbar-track {
+    background: var(--medium-grey);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--white);
+  }
+}
+
+.slider-grey {
+  scrollbar-color: var(--scroll-track-grey);
+
+  &::-webkit-scrollbar-track {
+    background: var(--scroll-track-grey);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-grey);
+  }
+}
+
+.slider-no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slider > * {
+  scroll-snap-align: start;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(50%);
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    left: var(--dimension-xl);
+    width: calc(100% - var(--dimension-xl) * 2);
+  }
+
+  @media (max-width: 375px) {
+    left: var(--dimension-mdl);
+    width: calc(100% - var(--dimension-mdl) * 2);
+  }
+}
+
+.slider__btn {
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--dimension-xl);
+  height: var(--dimension-xl);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:disabled {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.slider-controls .button__prev {
+  transform: translateX(-50%);
+}
+
+.slider-controls .button__next {
+  transform: translateX(50%);
+}

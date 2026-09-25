@@ -1,0 +1,113 @@
+.about {
+  position: relative;
+  z-index: 2;
+  background-image: url(../../images/about-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  margin-top: -100px;
+  height: 565px;
+  mask-image:
+    linear-gradient(to bottom right, transparent 49%, black 50%),
+    linear-gradient(black, black);
+  mask-size:
+    100% 100px,
+    100% calc(100% - 100px);
+  mask-position:
+    top left,
+    bottom left;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-image:
+    linear-gradient(to bottom right, transparent 49%, black 50%),
+    linear-gradient(black, black);
+  -webkit-mask-size:
+    100% 100px,
+    100% calc(100% - 100px);
+  -webkit-mask-position:
+    top left,
+    bottom left;
+  -webkit-mask-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    height: 380px;
+    margin-top: -30px;
+    mask-image:
+      linear-gradient(to bottom right, transparent 48%, black 50%),
+      linear-gradient(black, black);
+    mask-size:
+      100% 30px,
+      100% calc(100% - 30px);
+    -webkit-mask-image:
+      linear-gradient(to bottom right, transparent 48%, black 50%),
+      linear-gradient(black, black);
+    -webkit-mask-size:
+      100% 30px,
+      100% calc(100% - 30px);
+  }
+}
+
+.about__content {
+  color: var(--black-add-text);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    padding-top: var(--dimension-xxxxll);
+    padding-bottom: 213px;
+  }
+}
+
+.about__text {
+  max-width: 492px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--dimension-xss);
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    max-width: 284px;
+  }
+}
+
+.about__text > h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+}
+
+.about__text > p {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xs);
+}
+
+.about__workman {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+
+  & img {
+    width: 479px;
+    height: 479px;
+
+    @media (max-width: 900px) {
+      width: 350px;
+      height: 350px;
+    }
+
+    @media (max-width: 768px) {
+      width: 310px;
+      height: 310px;
+    }
+
+    @media (max-width: 500px) {
+      width: 210px;
+      height: 210px;
+    }
+  }
+}

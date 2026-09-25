@@ -1,0 +1,25 @@
+@import "./css/reset.min.css";
+@import "./css/globals.css";
+@import "./css/variables.css";
+@import "./css/slider.css";
+
+@import "./css/sections/header.css";
+@import "./css/sections/burger.css";
+@import "./css/sections/hero.css";
+@import "./css/sections/advantages.css";
+@import "./css/sections/about.css";
+@import "./css/sections/projects.css";
+@import "./css/sections/cta-price.css";
+@import "./css/sections/principles.css";
+@import "./css/sections/calculator.css";
+@import "./css/sections/services.css";
+@import "./css/sections/callback.css";
+@import "./css/sections/footer.css";
+
+.site {
+  background-color: var(--white);
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat-Medium", Helvetica;
+}

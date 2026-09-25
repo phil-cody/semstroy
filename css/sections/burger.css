@@ -1,0 +1,111 @@
+.burger {
+  position: absolute;
+  top: 0;
+  right: -110%;
+  z-index: 55;
+  width: 100%;
+  background-color: var(--white);
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px -2px 10px 1px var(--dark-grey);
+  box-shadow: 0px -2px 10px 1px var(--dark-grey);
+
+  &.burger__open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+  }
+}
+
+.burger__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
+}
+
+.burger__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--dimension-xs);
+  padding-bottom: var(--dimension-xs);
+
+  @media (max-width: 768px) {
+    padding-top: var(--dimension-sm);
+    padding-bottom: var(--dimension-sm);
+  }
+}
+
+.burger__logo {
+  & span:nth-child(1) {
+    color: var(--black-text);
+  }
+
+  & span:nth-child(2) {
+    color: var(--yellow);
+  }
+}
+
+.burger__close-burger {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dimension-xxxs);
+  padding: 0;
+  border: 0;
+  width: var(--dimension-xlll);
+  height: var(--dimension-xlll);
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: 375px) {
+    gap: var(--dimension-xxxss);
+  }
+
+  & span {
+    width: 100%;
+    height: var(--dimension-xxxs);
+    background-color: var(--black-text);
+    border-radius: var(--dimension-xxxl);
+    position: absolute;
+    top: 50%;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.burger__main {
+  padding-top: var(--dimension-xxxxl);
+  padding-bottom: var(--dimension-mdl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--dimension-xxxxll);
+  text-align: center;
+}
+
+.burger__nav ul {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xlg);
+  display: flex;
+  gap: calc(var(--dimension-xxxxl) + var(--dimension-xxxs));
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  a {
+    color: var(--black-text);
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+}

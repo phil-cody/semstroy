@@ -1,0 +1,57 @@
+.cta-price {
+  position: relative;
+  background-image: url(../../images/cta-price-bg.webp);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-position: 90% 50%;
+  }
+}
+
+.cta-price__content {
+  padding-top: calc(var(--dimension-xxxs) + var(--dimension-xxxxl));
+  padding-bottom: calc(var(--dimension-xxxs) + var(--dimension-xxxxl));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    padding-top: var(--dimension-xll);
+    padding-bottom: var(--dimension-xll);
+    justify-content: flex-start;
+    gap: var(--dimension-lg);
+    flex-direction: column;
+  }
+}
+
+.cta-price__content h2 {
+  font-weight: var(--font-weight-bold);
+  color: var(--yellow);
+  font-size: var(--font-size-xxl);
+}
+
+.cta-price__content span {
+  color: var(--white);
+}
+
+.cta-price a {
+  padding: var(--dimension-sm)
+    calc(var(--dimension-xss) + var(--dimension-xxxl));
+  font-weight: var(--font-weight-bold);
+  color: var(--black-text);
+  font-size: var(--font-size-xl);
+  position: relative;
+  z-index: 2;
+  text-wrap: nowrap;
+
+  @media (max-width: 768px) {
+    padding: var(--dimension-xxs) var(--dimension-xlg);
+    font-size: var(--font-size-xs);
+  }
+}

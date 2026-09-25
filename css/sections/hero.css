@@ -1,0 +1,106 @@
+.hero {
+  position: relative;
+  height: 678px;
+  z-index: 2;
+  margin-top: 47px;
+
+  @media (max-width: 768px) {
+    height: 520px;
+    margin-top: 49px;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 42px;
+  }
+
+  &:before {
+    content: "";
+    background-image: url(../../images/hero-bg.webp);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: cover;
+    filter: grayscale(100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    content: "";
+    background-color: var(--black-mask);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hero__content {
+  padding-top: calc(var(--dimension-xxxxl) * 1.375);
+  padding-bottom: calc(var(--dimension-xxxxl) * 2.75);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    padding-top: var(--dimension-xll);
+    padding-bottom: calc(var(--dimension-xxxxl) * 1.25);
+  }
+
+  @media (max-width: 375px) {
+    padding-top: var(--dimension-smd);
+    padding-bottom: calc(var(--dimension-xxxxl) * 1.25);
+  }
+}
+
+.hero__text {
+  max-width: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--dimension-smd);
+
+  @media (max-width: 768px) {
+    max-width: 258px;
+  }
+}
+
+.hero__text > h1 {
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+  font-size: var(--font-size-xxl);
+}
+
+.hero__text > p {
+  font-weight: var(--font-weight-regular);
+  color: var(--white);
+  font-size: var(--font-size-xs);
+}
+
+.hero__actions {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  max-width: 510px;
+  width: 100%;
+  display: flex;
+  gap: var(--dimension-xlg);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  & a {
+    width: fit-content;
+  }
+}
