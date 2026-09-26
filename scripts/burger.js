@@ -35,4 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       openMenu();
     } else if (isMenuOpen && (closeBurgerBtn.contains(target) || target.closest("burger__close-burger"))) closeMenu();
   });
+
+  menu.querySelector('.burger__nav').querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 });
